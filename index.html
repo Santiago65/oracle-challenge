@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <title>Juego del Ahorcado</title>
+        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="estilos/styles.css">
+        <link rel="stylesheet" href="estilos/reset.css">
+       
+    </head>
+
+    <body>
+        
+        <header>
+
+            <center><h1 id="ti">El juego del ahorcado</h1></center>
+
+        </header>
+
+        <main>
+
+            <section id="pantalla_principal">
+
+                <div class="boton_container">
+                    <button class="inicio_juego">
+                        <span> Iniciar Juego </span>
+                    </button>
+                    
+                    <button class="agregar_palabra">
+                        <span> Agregar Nueva Palabra </span> 
+                    </button>
+                </div>
+
+            </section>
+
+            <section id="ahorcado">           
+                
+                <div class="figura">
+                <div class="rectangulo0"></div>
+                <div class="rectangulo1"></div>
+                <div class="rectangulo2"></div>
+                <div class="rectangulo3"></div>
+                <div class="rectangulo4"></div>
+                <div class="rectangulo5"></div>
+                <div class="rectangulo6"></div>
+                <div class="rectangulo7"></div>
+                <div class="rectangulo8"></div>
+                <div class="rectangulo9"></div>
+                </div>
+                
+                <div class="botones_juego">
+                    <button class="nuevo_juego">
+                        <span>Nuevo Juego</span>
+                    </button>
+
+                    <button class="desistir">
+                        <span>Desistir</span>
+                    </button>
+                </div>
+
+                <div class="letrero">
+                    <p class="ganado"></p>
+                    <p class="perdedor"></p>
+                </div>
+
+                
+                <div id="letters">
+                    <p class="results"></p>
+                </div>
+
+                <div id="resultado">
+                    <p class="texto"></p>
+                </div>
+                
+                <div id="historial">
+                    <p class="history"></p>
+                </div>
+
+           </section>
+
+           <section id="agregar">
+
+            <div>
+
+                <textarea id="guardar" placeholder="Ingrese una Palabra" cols="20" rows="1" maxlength="8" onkeydown="if((event.keyCode>47&&event.keyCode<58)||(event.keyCode>95&&event.keyCode<106))return false" autofocus></textarea>
+
+                <div class="botones_agregar">
+                    <button class="nuevo_palabra">
+                        <span>Guardar y Empezar</span>
+                    </button>
+
+                    <button class="cancelar">
+                        <span>Cancelar</span>
+                    </button>
+                </div>
+                
+            </div>
+
+
+           </section>
+ 
+        </main>
+
+
+        <script src="js/juego.js"></script>
+        <script src="js/botones.js"></script>
+        <script src="js/agregar.js"></script>
+        <script src="js/comprobarLetras.js"></script>
+        <div class="container"></div>
+  <!-- Footer main -->
+ 
+
+  <!-- Footer social -->
+ 
+
+  <!-- Footer legal -->
+  <section class="ft-legal">
+   
+     <p class="nomb">&copy; 2022 Santiago Carreira  <a class="mail" href="mailto:stgocarreira@gmail.com">stgocarreira@gmail.com</a></p>
+   
+  </section>
+</footer>
+    </body>
+
+</html>
